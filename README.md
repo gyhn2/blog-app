@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Blog
 
 Multi-user application for writing blog posts. Uses Java Spring Boot and H2 Database. 
