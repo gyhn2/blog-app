@@ -1,8 +1,8 @@
 # Blog
 
-Multi-user application for writing blog posts. Uses Java Spring Boot and H2 Database. 
+Multi-user blog application. Uses Java Spring Boot and H2 Database. 
 
-Simple registration and sign-in process required to write. User
+Simple registration and sign-in process required to write a blog post.
 
 Blog post search enabled
 
