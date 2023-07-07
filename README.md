@@ -17,3 +17,9 @@ In the project directory, run following commands
 3. ```java -jar target/board-0.0.1-SNAPSHOT.jar```
 
 4. Head to http://localhost:8080/ to try the application
+
+
+## Frameworks
+* Spring Boot: https://spring.io/projects/spring-boot
+* Spring Secrity: https://spring.io/projects/spring-security
+* Bootstrap: https://getbootstrap.com/
