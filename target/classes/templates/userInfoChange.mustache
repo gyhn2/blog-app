@@ -1,0 +1,14 @@
+{{>layouts/header}}
+<form class="container" action="/nickname/update" method="post">
+    <input type="hidden" name="_method" value="PUT"/>
+
+    <div class="mb-2">
+        <input type="text" class="form-control" name="username" placeholder="Username"
+               pattern=".{2,}" required oninvalid="this.setCustomValidity('Username ')"
+               oninput="this.setCustomValidity('')"/>
+    </div>
+    <div class="mb-2 mt-3">
+        <button type="submit" class="btn btn-primary col-12">Change</button>
+    </div>
+</form>
+{{>layouts/footer}}

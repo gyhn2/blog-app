@@ -1,0 +1,84 @@
+{{>layouts/header}}
+
+{{#postModel}}
+    <div class="container mx-auto mb-2" style="max-width:800px;">
+        <table style="width:100%;">
+            <tr>
+                <td colspan="3">
+                    &nbsp;
+                </td>
+            </tr>
+            <th>
+                <a href="" class="link-dark text-decoration-none d-block"><h1 style="white-space: pre-wrap">{{postModel.title}}</h1></a>
+            </th>
+            <tr>
+                <td colspan="3">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    {{#time}}<p>Created: {{time}}</p>{{/time}}
+                </td>
+                <td><a href="/users/{{postModel.users.username}}" class="link-dark text-decoration-none d-block">
+                    <p>Written by: {{postModel.writer}}</p></a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <p mb-2 style="min-height: 150px; white-space: pre-wrap" >{{postModel.content}}</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <hr>
+                </td>
+            </tr>
+        </table>
+        <div class="d-flex justify-content-between" style="max-width:800px;">
+            <a href="/posts" class="btn btn-dark">Back to List</a>
+            {{#userStatus}}{{#sameUser}}
+                <form class="btn-group" role="group" action="/posts/{{postModel.id}}" method="POST" style="min-width:25%">
+                    <a href="/posts/{{postModel.id}}/edit" class="btn btn-warning w-50">
+                        Edit
+                    </a>
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit" class="btn btn-danger w-50">Del</button>
+                </form>
+            {{/sameUser}}{{/userStatus}}
+        </div>
+<!--        first method-->
+<!--
+        <div class="d-flex justify-content-between">
+            <a href="/posts"><button type="submit" class="btn btn-dark">Back to List</button></a>
+            {{#userStatus}}{{#sameUser}}
+                <div class="btn-toolbar" role="toolbar">
+                    <div class="btn-group w-50" role="group">
+                        <a href="/posts/{{postModel.id}}/edit" class="btn btn-warning">
+                            Edit
+                        </a>
+                        <i></i>
+                    </div>
+                    <form class="btn-group w-50" role="group" action="/posts/{{postModel.id}}" method="POST">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </div>
+            {{/sameUser}}{{/userStatus}}
+        </div>
+-->
+
+    </div>
+{{/postModel}}
+{{^postModel}}
+    <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
+        <div class="align-middle">The post does not exist</div>
+    </div>
+{{/postModel}}
+
+{{>layouts/footer}}

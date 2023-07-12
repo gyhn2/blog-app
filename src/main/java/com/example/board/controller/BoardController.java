@@ -169,8 +169,6 @@ public class BoardController {
 	}
 
 
-
-	//modify from here
 	@GetMapping("/nickname")
 	public String usernameChange(Model model) {
 		if (usersService.userStatus()) {
@@ -189,19 +187,3 @@ public class BoardController {
 	}
 
 }
-
-//drop down sort
-// previous post etc
-// nav bar sign up
-// warning popup on delete post
-//		log.info(usersRepository.findByUsername(username).getPosts().toString());
-// width of container
-// @media dynamic width for buttons
-// submit, edit button 위치
-// dark light theme
-// responsive @media - in smaller screen, make max-width smaller for "back", and remove halving
-/*
-- if you want to modify usernames and also display the modified username on old posts,
-then consider removing the "writer" field on Post and replacing post.writer with the post.users.username instead.
-
-*/

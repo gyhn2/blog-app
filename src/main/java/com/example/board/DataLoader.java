@@ -30,15 +30,14 @@ import java.sql.Timestamp;
 //    }
 //
 //    public void run(ApplicationArguments args) {
-//        UsersDto usersDto = new UsersDto("gyhn2", "gyhn2",null, "gyhn2");
+//        UsersDto usersDto = new UsersDto("abcd", "abcd",null, "abcd");
 //        Users user = usersRepository.save(usersDto.toEntity());
 //
-//        //PostDto postDto = new PostDto("첫번째 게시물 입니다.", "첫번째 게시물입니다.", "gyhn2", new Timestamp(System.currentTimeMillis()), user);
 //        for (int i=1; i<100; i++) {
-//            Post result = postRepository.save(new PostDto(i+"번째 게시물 입니다.", i+"번째 게시물입니다.", "gyhn2",
+//            Post result = postRepository.save(new PostDto("Post "+i+".", "Post number" + i, "abcd",
 //                    new Timestamp(System.currentTimeMillis()), user).toEntity());
 //            if (result==null) {
-//                log.info("\n"+i+"번 게시물 등록 실패");
+//                log.info("\n"+i+"- fail");
 //            }
 //        }
 //    }
@@ -57,12 +56,10 @@ import java.sql.Timestamp;
 //	@Bean
 //	InitializingBean sendDatabase() {
 //		return () -> {
-//			Users user = usersRepository.save(new UsersDto("gyhn2", "gyhn2",null, "gyhn2").toEntity());
-//			//PostDto postDto = new PostDto("첫번째 게시물 입니다.", "첫번째 게시물입니다.", "gyhn2", new Timestamp(System.currentTimeMillis()), user);
+//			Users user = usersRepository.save(new UsersDto("abcd", "abcd",null, "abcd").toEntity());
 //			for (int i=1; i<100; i++) {
-//				Post result = postRepository.save(new PostDto(i+"번째 게시물 입니다.", i+"번째 게시물입니다.", "gyhn2",
-//						new Timestamp(System.currentTimeMillis()), user).toEntity());
-//
+//            Post result = postRepository.save(new PostDto("Post "+i+".", "Post number" + i, "abcd",
+//                    new Timestamp(System.currentTimeMillis()), user).toEntity());
 //			}
 //
 //		};
