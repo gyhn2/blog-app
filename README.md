@@ -26,11 +26,25 @@ In the project directory, run following commands
 
 
 ## PC Screens
+Home Page
 <img width="600" alt="Screen Shot 2023-07-12 at 12 15 47 AM" src="https://github.com/gyhn2/blog-app/assets/80073085/82a04d29-39ac-4714-8b25-2cae5cf98c67">
-<img width="600" alt="Screen Shot 2023-07-12 at 12 10 54 AM" src="https://github.com/gyhn2/blog-app/assets/80073085/41e794b0-973d-4f21-a485-f86554dfccd2">
-<img width="600" alt="Screen Shot 2023-07-12 at 12 14 27 AM" src="https://github.com/gyhn2/blog-app/assets/80073085/3a080b18-b70d-450c-9a3b-a935346782e8">
-<img width="600" alt="Screen Shot 2023-07-12 at 12 09 46 AM" src="https://github.com/gyhn2/blog-app/assets/80073085/897a8866-fdb4-48e2-bf2e-141d3d8ad70e">
+
+Sign In Page
 <img width="600" alt="Screen Shot 2023-07-12 at 12 09 32 AM" src="https://github.com/gyhn2/blog-app/assets/80073085/5f0a3eba-8d44-4741-a46d-591e205804b7">
+
+Write a Post
+<img width="600" alt="Screen Shot 2023-07-12 at 12 09 46 AM" src="https://github.com/gyhn2/blog-app/assets/80073085/897a8866-fdb4-48e2-bf2e-141d3d8ad70e">
+
+Post Lists
+<img width="600" alt="Screen Shot 2023-07-12 at 12 14 27 AM" src="https://github.com/gyhn2/blog-app/assets/80073085/3a080b18-b70d-450c-9a3b-a935346782e8">
+
+Edit Post Page
+<img width="600" alt="Screen Shot 2023-07-12 at 12 10 54 AM" src="https://github.com/gyhn2/blog-app/assets/80073085/41e794b0-973d-4f21-a485-f86554dfccd2">
+
+Post Page
+<img width="600" alt="Screen Shot 2023-07-12 at 12 18 22 AM" src="https://github.com/gyhn2/blog-app/assets/80073085/93c5391e-3d37-4d88-909f-de24ccfa9626">
+
+Signed Out
 <img width="600" alt="Screen Shot 2023-07-12 at 12 09 20 AM" src="https://github.com/gyhn2/blog-app/assets/80073085/9631b1d2-7141-459e-bcc8-e714b2cc5b5b">
 
 ## Mobile Screens
